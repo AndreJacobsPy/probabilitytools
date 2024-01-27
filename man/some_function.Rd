@@ -9,6 +9,9 @@ some_function(x)
 \arguments{
 \item{x}{-> integer}
 }
+\value{
+Nothing
+}
 \description{
 It just loops through and prints values based on integer input.
 }
