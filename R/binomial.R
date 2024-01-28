@@ -14,7 +14,7 @@
 #' > 0.03125
 #'
 #' @export
-pr.binomial <- function(n, j, p) {
+pr_binomial <- function(n, j, p) {
   combinations <- choose(n, j)
   return(combinations * p^j * (1 - p)^(n - j))
 }
@@ -28,7 +28,7 @@ pr.binomial <- function(n, j, p) {
 #' @param p -> the probability of success
 #' @return the mean or expected value
 #' @export
-mean.binomial <- function(n, p) {
+mean_binomial <- function(n, p) {
   return(n * p)
 }
 
@@ -40,6 +40,6 @@ mean.binomial <- function(n, p) {
 #' @param p -> the probability of success
 #' @return the mean or expected value
 #' @export
-var.binomial <- function(n, p) {
+var_binomial <- function(n, p) {
   return(n * p * (1 - p))
 }
