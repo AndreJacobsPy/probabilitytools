@@ -10,4 +10,5 @@
 #' power(2, 3)
 #' > 8
 #'
+#' @export
 power <- function(value, power) value^power
