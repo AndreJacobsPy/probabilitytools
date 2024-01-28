@@ -2,7 +2,7 @@
 % Please edit documentation in R/binomial.R
 \name{var_binomial}
 \alias{var_binomial}
-\title{var.binomial}
+\title{var_binomial}
 \usage{
 var_binomial(n, p)
 }
@@ -12,7 +12,7 @@ var_binomial(n, p)
 \item{p}{-> the probability of success}
 }
 \value{
-the mean or expected value
+the variance of trials
 }
 \description{
 function that calculates the variance of outcomes.

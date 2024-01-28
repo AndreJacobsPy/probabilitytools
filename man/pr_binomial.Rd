@@ -2,7 +2,7 @@
 % Please edit documentation in R/binomial.R
 \name{pr_binomial}
 \alias{pr_binomial}
-\title{pr.binomial}
+\title{pr_binomial}
 \usage{
 pr_binomial(n, j, p)
 }
@@ -20,10 +20,10 @@ probability of Binomial Random Variable
 Function for calculating probability for Bernouli Trials.
 }
 \examples{
-pr.binomial(10, 2, 1/6)
+pr_binomial(10, 2, 1/6)
 > 0.29071
 
-pr.binomial(n = 5, j = 5, p = 1/2)
+pr_binomial(n = 5, j = 5, p = 1/2)
 > 0.03125
 
 }

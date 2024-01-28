@@ -2,7 +2,7 @@
 % Please edit documentation in R/binomial.R
 \name{mean_binomial}
 \alias{mean_binomial}
-\title{mean.binomial}
+\title{mean_binomial}
 \usage{
 mean_binomial(n, p)
 }
