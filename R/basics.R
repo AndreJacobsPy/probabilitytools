@@ -1,10 +1,13 @@
-#' This is a test function.
+#' simple function for cleaner roots.
 #'
-#' It just loops through and prints values based on integer input.
+#' @param value the value to apply root to.
+#' @param power the value to raise value to.
+#' @return the new value raised to the power.
+#' @examples
+#' power(2, 2)
+#' > 4
 #'
-#' @param x -> integer
-#' @returns Nothing
-#' @export
-some_function <- function(x) {
-  for (i in 1:x) print(i)
-}
+#' power(2, 3)
+#' > 8
+#'
+power <- function(value, power) value^power
