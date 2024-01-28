@@ -1,14 +1,20 @@
-#' simple function for cleaner roots.
+#' pr.binomial
 #'
-#' @param value the value to apply root to.
-#' @param power the value to raise value to.
-#' @return the new value raised to the power.
+#' Function for calculating probability for Bernouli Trials.
+#'
+#' @param n - the number of trials
+#' @param j - the number of events to occur
+#' @param p - the probability of j
+#' @return probability of Binomial Random Variable
 #' @examples
-#' power(2, 2)
-#' > 4
+#' pr.binomial(10, 2, 1/6)
+#' > 0.29071
 #'
-#' power(2, 3)
-#' > 8
+#' pr.binomial(n = 5, j = 5, p = 1/2)
+#' > 0.03125
 #'
 #' @export
-power <- function(value, power) value^power
+pr.binomial <- function(n, j, p) {
+  combinations <- choose(n, j)
+  return(combinations * p^j * (1 - p)^(n - j))
+}
